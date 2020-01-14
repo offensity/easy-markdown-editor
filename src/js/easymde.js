@@ -1829,6 +1829,7 @@ EasyMDE.prototype.render = function (el) {
 
         CodeMirrorSpellChecker({
             codeMirrorInstance: CodeMirror,
+            language: options.language,
         });
     } else {
         mode = options.parsingConfig;

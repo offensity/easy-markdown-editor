@@ -180,6 +180,7 @@ easyMDE.value('New input for **EasyMDE**');
 - **shortcuts**: Keyboard shortcuts associated with this instance. Defaults to the [array of shortcuts](#keyboard-shortcuts).
 - **showIcons**: An array of icon names to show. Can be used to show specific icons hidden by default without completely customizing the toolbar.
 - **spellChecker**: If set to `false`, disable the spell checker. Defaults to `true`.
+- **language**: The language used for spell checking. This parameter accepts either a locale string (e.g.: `en_US` or `de_DE`) or an object with the keys `aff` and `dic` that specify the links to dictionary files that should be used.
 - **status**: If set to `false`, hide the status bar. Defaults to the array of built-in status bar items.
   - Optionally, you can set an array of status bar items to include, and in what order. You can even define your own custom status bar items.
 - **styleSelectedText**: If set to `false`, remove the `CodeMirror-selectedtext` class from selected lines. Defaults to `true`.
@@ -253,6 +254,7 @@ var editor = new EasyMDE({
 	},
 	showIcons: ["code", "table"],
 	spellChecker: false,
+    language: "de_DE",
 	status: false,
 	status: ["autosave", "lines", "words", "cursor"], // Optional usage
 	status: ["autosave", "lines", "words", "cursor", {
